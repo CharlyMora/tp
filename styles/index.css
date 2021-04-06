@@ -1,7 +1,20 @@
+body{
+    display: grid;
+    background-color: #CCCFDB;
+    /* a: #CCCFDB 
+    b: #465280 textos
+    c: #001959 títulos
+    d: #005AEB 
+    e: #007864 
+    f: #F7B916  */
+}
+
 .indexContainer{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
+    position: relative;
+    overflow:hidden; 
+   align-items: center;
 }
 
 .indexContainerItema{
@@ -9,5 +22,7 @@
 }
 
 .indexContainerItemb{
+    position: absolute;
     grid-column-start: 2;
+    top: -300px;
 }
