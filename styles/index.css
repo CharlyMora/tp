@@ -1,0 +1,13 @@
+.indexContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.indexContainerItema{
+    grid-column: 1/2;
+}
+
+.indexContainerItemb{
+    grid-column-start: 2;
+}
