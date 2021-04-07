@@ -2,10 +2,10 @@
     display: grid;
     align-items: center;
     height: 100vh;
-    background-color: red;
+    /* background-color: red; */
 }
 .mapcontainer{
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     display: grid;
     position: relative;   
     width: 100%;   
@@ -138,13 +138,16 @@
 }
 
 .lighthouse{
+    align-self: flex-end;
     grid-row: 4;
     grid-column: 8;
 }
 
-.a{
-    grid-row: 4;
-    grid-column: 3;
+.treehouse{
+    justify-self:end;
+    align-self: flex-start;
+    grid-row: 9;
+    grid-column: 8;
 }
 
 
