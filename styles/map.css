@@ -59,12 +59,16 @@
 .card{
     display: flex;
     flex-direction: column;
-    background-color: rgb(160, 160, 160);
+    background-color: white;
     margin: 0;
     grid-row: 2/10;
     grid-column: 6/10;
     /* display: none; */
     z-index: 2;
+}
+
+.card img{
+    margin: 0px 10px;
 }
 
 .cardTitle{
@@ -86,4 +90,9 @@
 .backbuttoncontainer img{
     height: 1.5rem;
     margin-right: 10px;
+}
+
+.textContainer{
+    margin: 0px 10px;
+    font-size: 1.6vw;
 }
