@@ -8,37 +8,146 @@
     background-color: aliceblue;
     display: grid;
     position: relative;   
-    width: fit-content;
-    /* background-image: url('/img/map.png') ;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain ; */
-    /* width: 100%;
-    height: 100%;
-    height: 51.21%; */
-
-    
+    width: 100%;   
 }
 
-.mapcontainer img + .points {
+
+.mapcontainer .map + .points {
     position: absolute;
-    display: grid;
+    width: 100%;
+    /* height: 100vh; */
     top: 0;
-    bottom: 0;
+    /* bottom: 0; */
     left: 0;
     /* right: 0; */
 }
 
+.map{
+    width: 100%;
+}
+
+
+
 .points{
     display: grid;
+    width: 100%;
+    height: 100%;
     grid-template-columns: repeat(10,1fr);
     grid-template-rows: repeat(10,1fr);
+    place-items: center;
 }
 
+.pinwraper{
+    display: grid;
+    position: relative;
+    place-content: center;
+    height: 5px;
+    width: 5px;
+    /* left: -15px; */
+}
 
+.pin{
+    position: absolute;
+    justify-self: center;
+    bottom: 0;
+    transform-origin: bottom center;
+}
 .capsule{
-    margin: 0;
-    grid-column-start: 8;
-    grid-row-start: 8;
+
+    grid-row: 3;
+    grid-column: 2;
 }
+
+.hostel{
+    justify-self:start;
+    align-self: flex-end;
+    grid-row: 4;
+    grid-column: 3;
+}
+
+.boutique{
+    
+    grid-row: 6;
+    grid-column: 3;
+}
+
+.motel{
+    justify-self:start;
+    align-self: flex-start;
+    grid-row-start: 7;
+    grid-column-start: 4;
+}
+
+.cruise{
+    justify-self:start;
+    align-self: flex-start;
+    grid-row: 4;
+    grid-column: 4;
+}
+
+.resort{
+    justify-self:start;
+    grid-row: 9;
+    grid-column: 4;
+}
+
+.apartment{
+    grid-row: 7;
+    grid-column: 4;
+}
+
+.inn{
+    grid-row: 6;
+    grid-column: 5;
+}
+
+.business{
+    align-self: flex-end;
+    grid-row: 4;
+    grid-column: 5;
+}
+
+.castle{
+    justify-self:start;
+    grid-row: 3;
+    grid-column: 6;
+}
+
+.couch{
+    align-self: flex-end;
+    grid-row: 4;
+    grid-column: 6;
+}
+
+.bandb{
+    align-self: flex-end;
+    grid-row: 8;
+    grid-column: 6;
+}
+
+.timeshare{
+    justify-self:start;
+    align-self: flex-end;
+    grid-row: 5;
+    grid-column: 7;
+}
+
+.glamping{
+    grid-row: 3;
+    grid-column: 6;
+}
+
+.lighthouse{
+    grid-row: 4;
+    grid-column: 8;
+}
+
+.a{
+    grid-row: 4;
+    grid-column: 3;
+}
+
+
+
+
 
