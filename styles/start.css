@@ -1,0 +1,13 @@
+.container1{
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+}
+
+.initButton{
+    grid-row-start: 2;
+    width: 50%;
+    height: auto;
+    justify-self: center;
+}

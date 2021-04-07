@@ -1,24 +1,21 @@
-body{
-    display: grid;
-    background-color: #CCCFDB;
-    /* a: #CCCFDB 
-    b: #465280 textos
-    c: #001959 títulos
-    d: #005AEB 
-    e: #007864 
-    f: #F7B916  */
-}
 
 .indexContainer{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
     position: relative;
     overflow:hidden; 
-   align-items: center;
+    align-items: center;
+
 }
+
 
 .indexContainerItema{
     grid-column: 1/2;
+
+}
+.myimg{
+    cursor: pointer;
 }
 
 .indexContainerItemb{
