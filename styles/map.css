@@ -34,7 +34,7 @@
     height: 100%;
     grid-template-columns: repeat(10,1fr);
     grid-template-rows: repeat(10,1fr);
-    place-items: center;
+    /* place-items: center; */
 }
 
 .pinwraper{
@@ -43,7 +43,10 @@
     place-content: center;
     height: 5px;
     width: 5px;
+    justify-self:center;
+    align-self: center;
     /* left: -15px; */
+    z-index: 0;
 }
 
 .pin{
@@ -52,105 +55,35 @@
     bottom: 0;
     transform-origin: bottom center;
 }
-.capsule{
 
-    grid-row: 3;
-    grid-column: 2;
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(160, 160, 160);
+    margin: 0;
+    grid-row: 2/10;
+    grid-column: 6/10;
+    /* display: none; */
+    z-index: 2;
 }
 
-.hostel{
-    justify-self:start;
-    align-self: flex-end;
-    grid-row: 4;
-    grid-column: 3;
+.cardTitle{
+    display: flex;
+    justify-content: space-between;
 }
-
-.boutique{
+.cardTitle h2{
+    margin: 15px 0px 3px 10px;
+    font-size: 2rem;
     
-    grid-row: 6;
-    grid-column: 3;
+}
+.backbuttoncontainer{
+    display: grid;
+    align-content: center;
+    align-self: center;
+    height: fit-content;
 }
 
-.motel{
-    justify-self:start;
-    align-self: flex-start;
-    grid-row-start: 7;
-    grid-column-start: 4;
+.backbuttoncontainer img{
+    height: 1.5rem;
+    margin-right: 10px;
 }
-
-.cruise{
-    justify-self:start;
-    align-self: flex-start;
-    grid-row: 4;
-    grid-column: 4;
-}
-
-.resort{
-    justify-self:start;
-    grid-row: 9;
-    grid-column: 4;
-}
-
-.apartment{
-    grid-row: 7;
-    grid-column: 4;
-}
-
-.inn{
-    grid-row: 6;
-    grid-column: 5;
-}
-
-.business{
-    align-self: flex-end;
-    grid-row: 4;
-    grid-column: 5;
-}
-
-.castle{
-    justify-self:start;
-    grid-row: 3;
-    grid-column: 6;
-}
-
-.couch{
-    align-self: flex-end;
-    grid-row: 4;
-    grid-column: 6;
-}
-
-.bandb{
-    align-self: flex-end;
-    grid-row: 8;
-    grid-column: 6;
-}
-
-.timeshare{
-    justify-self:start;
-    align-self: flex-end;
-    grid-row: 5;
-    grid-column: 7;
-}
-
-.glamping{
-    grid-row: 3;
-    grid-column: 6;
-}
-
-.lighthouse{
-    align-self: flex-end;
-    grid-row: 4;
-    grid-column: 8;
-}
-
-.treehouse{
-    justify-self:end;
-    align-self: flex-start;
-    grid-row: 9;
-    grid-column: 8;
-}
-
-
-
-
-

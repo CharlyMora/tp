@@ -1,0 +1,102 @@
+.capsule{
+    
+    grid-row: 3;
+    grid-column: 2;
+}
+
+.hostel{
+    justify-self:start;
+    align-self: flex-end;
+    grid-row: 4;
+    grid-column: 3;
+}
+
+.boutique{
+    
+    grid-row: 6;
+    grid-column: 3;
+}
+
+.motel{
+    justify-self:start;
+    align-self: flex-start;
+    grid-row-start: 7;
+    grid-column-start: 4;
+}
+
+.cruise{
+    justify-self:start;
+    align-self: flex-start;
+    grid-row: 4;
+    grid-column: 4;
+}
+
+.resort{
+    justify-self:start;
+    grid-row: 9;
+    grid-column: 4;
+}
+
+.apartment{
+    grid-row: 7;
+    grid-column: 4;
+}
+
+.inn{
+    grid-row: 6;
+    grid-column: 5;
+}
+
+.business{
+    align-self: flex-end;
+    grid-row: 4;
+    grid-column: 5;
+}
+
+.castle{
+    justify-self:start;
+    grid-row: 3;
+    grid-column: 6;
+}
+
+.couch{
+    align-self: flex-end;
+    grid-row: 4;
+    grid-column: 6;
+}
+
+.bandb{
+    align-self: flex-end;
+    grid-row: 8;
+    grid-column: 6;
+}
+
+.timeshare{
+    justify-self:start;
+    align-self: flex-end;
+    grid-row: 5;
+    grid-column: 7;
+}
+
+.glamping{
+    grid-row: 3;
+    grid-column: 6;
+}
+
+.lighthouse{
+    align-self: flex-end;
+    grid-row: 4;
+    grid-column: 8;
+}
+
+.treehouse{
+    justify-self:end;
+    align-self: flex-start;
+    grid-row: 9;
+    grid-column: 8;
+}
+
+
+
+
+
