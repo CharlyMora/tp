@@ -1,6 +1,7 @@
 body{
     display: grid;
     background-color: #CCCFDB;
+    margin: 0;
 
     /* a: #CCCFDB 
     b: #465280 textos

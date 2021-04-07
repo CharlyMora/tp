@@ -1,0 +1,44 @@
+.maincontainer{
+    display: grid;
+    align-items: center;
+    height: 100vh;
+    background-color: red;
+}
+.mapcontainer{
+    background-color: aliceblue;
+    display: grid;
+    position: relative;   
+    width: fit-content;
+    /* background-image: url('/img/map.png') ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain ; */
+    /* width: 100%;
+    height: 100%;
+    height: 51.21%; */
+
+    
+}
+
+.mapcontainer img + .points {
+    position: absolute;
+    display: grid;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    /* right: 0; */
+}
+
+.points{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(10,1fr);
+}
+
+
+.capsule{
+    margin: 0;
+    grid-column-start: 8;
+    grid-row-start: 8;
+}
+

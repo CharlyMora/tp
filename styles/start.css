@@ -3,6 +3,9 @@
     min-height: 100vh;
     grid-template-rows: 1fr 1fr;
     justify-content: center;
+    background-image: url('/img/bluewave-2.png') ;
+    background-position: 110px;
+    background-repeat: no-repeat;
 }
 
 .initButton{
@@ -10,4 +13,5 @@
     width: 50%;
     height: auto;
     justify-self: center;
+    cursor: pointer;  
 }

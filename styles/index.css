@@ -12,10 +12,12 @@
 
 .indexContainerItema{
     grid-column: 1/2;
+    display: grid;
+    justify-items: center;
 
 }
 .myimg{
-    cursor: pointer;
+    cursor: pointer;  
 }
 
 .indexContainerItemb{
