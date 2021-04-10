@@ -1,6 +1,6 @@
 "use strict";
 
-var isACardActive = true;
+var isACardActive = false;
 
 function cardtoggle(cardName) {
   var id = cardName + "card";
@@ -9,8 +9,12 @@ function cardtoggle(cardName) {
   if (isACardActive) {
     hideCards();
   } else {
-    if (x.style.display === "none") {
+    // if (x.style.display === "none" || "") {
+    if (x.style.display != "flex") {
       x.style.display = "flex";
+      setTimeout(function () {
+        return x.style.opacity = 100;
+      }, 1);
       isACardActive = true;
     } else {
       x.style.display = "none";
@@ -26,9 +30,16 @@ function hideCards() {
   var _iteratorError = undefined;
 
   try {
-    for (var _iterator = y[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+    var _loop = function _loop() {
       var item = _step.value;
-      item.style.display = "none";
+      item.style.opacity = 0;
+      setTimeout(function () {
+        return item.style.display = "none";
+      }, 900);
+    };
+
+    for (var _iterator = y[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+      _loop();
     }
   } catch (err) {
     _didIteratorError = true;

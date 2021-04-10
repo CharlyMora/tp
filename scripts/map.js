@@ -1,4 +1,4 @@
-let isACardActive =true;
+let isACardActive =false;
 function cardtoggle(cardName) {
     let id = cardName+"card"
     let x = document.getElementById(id)
@@ -6,9 +6,15 @@ function cardtoggle(cardName) {
     if(isACardActive) {
         hideCards()
     }else{
-        if (x.style.display === "none") {
+        // if (x.style.display === "none" || "") {
+        if (x.style.display !="flex") {
+
+            x.style.display = "flex"
+
+            setTimeout(()=>x.style.opacity = 100, 1)
             
-            x.style.display = "flex";
+            
+            
             isACardActive =true
 
         } else {
@@ -23,7 +29,10 @@ function hideCards() {
     let y = document.getElementsByClassName('card')
     
     for (let item of y) {
-        item.style.display = "none"
+        item.style.opacity = 0
+        setTimeout(()=>item.style.display = "none", 900)
+        
+        
     }
 
     isACardActive=false
