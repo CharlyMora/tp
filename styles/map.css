@@ -12,6 +12,8 @@
 }
 
 
+
+
 .mapcontainer .map + .points {
     position: absolute;
     width: 100%;
@@ -25,8 +27,6 @@
 .map{
     width: 100%;
 }
-
-
 
 .points{
     display: grid;
@@ -94,6 +94,7 @@
 }
 
 .backbuttoncontainer img{
+    cursor: pointer;
     height: 1.5rem;
     margin-right: 10px;
 }
@@ -102,3 +103,4 @@
     margin: 0px 10px;
     font-size: 1.5vw;
 }
+

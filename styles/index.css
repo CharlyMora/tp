@@ -16,12 +16,16 @@
     justify-items: center;
 
 }
-.myimg{
-    cursor: pointer;  
+.startimg{
+    cursor: pointer; 
+    width: 50vh 
 }
 
 .indexContainerItemb{
-    position: absolute;
-    grid-column-start: 2;
-    top: -300px;
+
+    grid-column: 2;
+}
+
+.indexContainerItemb p{
+    font-size:5rem;
 }

@@ -2,7 +2,15 @@
     width: 2.5rem;
     cursor: pointer;
 }
-
+.backtomain{
+    grid-row: 1;
+    grid-column: 1;
+    justify-self:center;
+    align-self: center;
+}
+.backtomain img{
+    height: 2rem;
+}
 .capsule{
     
     grid-row: 3;
