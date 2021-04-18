@@ -1,226 +1,400 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@200&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles/map.css">
-    <link rel="stylesheet" href="../styles/general.css">
-    <link rel="stylesheet" href="../styles/pins.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Commissioner:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/map.css" />
+    <link rel="stylesheet" href="../styles/general.css" />
+    <link rel="stylesheet" href="../styles/pins.css" />
+  </head>
+  <body>
     <div class="maincontainer">
-        <div class="mapcontainer">
-            <img class="map" src="../img/map.png" alt="map image">
-            <div class="points">
-                <!-- CAPSULE -->
-                    <div class="capsule pinwraper">
-                        <img class="pin" onclick="cardtoggle('capsule')" src="../img/Component1.png" alt="">
-                    </div>
-                    <div id="capsulecard" class="card">
-                        <div class="cardTitle"> 
-                            <h2>Capsule</h2> 
-                            <div class="backbuttoncontainer" onclick="hideCards()"><img src="../img/backButton.png" alt="go back back button"></div> 
-                        </div>
-                        <img src="../img/places/capsule.png" alt="capsule image">
-                        <div class="textContainer">
-                            <p>It is a type of hotel developed in Japan, which features many small bed-sized rooms known as capsules. Capsule hotels provide cheap, basic overnight accommodation for guests who do not require or who cannot afford larger, more expensive rooms offered by more conventional hotels.</p>
-                        </div>
-                    </div>
-                     <!-- HOSTEL -->
-                     <div class="hostel pinwraper"><img class="pin" onclick="cardtoggle('hostel')" src="../img/Component1.png" alt=""></div>
-                     <div id="hostelcard" class="card">
-                         <div class="cardTitle"> 
-                             <h2>Hostel</h2> 
-                             <div class="backbuttoncontainer" onclick="hideCards()"><img src="../img/backButton.png" alt="go back back button"></div> 
-                         </div>
-                         <img src="../img/places/hostel.png" alt="hostel image">
-                         <div class="textContainer">
-                             <p>A hostel is a form of low-cost, short-term shared sociable lodging where guests can rent a bed, usually a bunk bed in a dormitory, with shared use of a lounge and sometimes a kitchen. Rooms can be mixed or single-sex and have private or shared bathrooms. Private rooms may also be available, but the property must offer dormitories to be considered a hostel.</p>
-                         </div>
-                     </div>
-                 <!-- BOUTIQUE -->
-                 <div class="boutique pinwraper"><img class="pin" onclick="cardtoggle('boutique')" src="../img/Component1.png" alt=""></div>
-                 <div id="boutiquecard" class="card">
-                     <div class="cardTitle"> 
-                         <h2>Boutique Hotel</h2> 
-                         <div class="backbuttoncontainer" onclick="hideCards()"><img src="../img/backButton.png" alt="go back back button"></div> 
-                     </div>
-                     <img src="../img/places/boutique.png" alt="boutique image">
-                     <div class="textContainer">
-                         <p>It is a type of hotel developed in Japan, which features many small bed-sized rooms known as capsules. Capsule hotels provide cheap, basic overnight accommodation for guests who do not require or who cannot afford larger, more expensive rooms offered by more conventional hotels.</p>
-                     </div>
-                 </div>
- 
- 
-                 <!-- MOTEL -->
-                 <div class="motel pinwraper"><img class="pin" onclick="cardtoggle('motel')" src="../img/Component1.png" alt=""></div>
-                 <div id="motelcard" class="card">
-                     <div class="cardTitle"> 
-                         <h2>Motel</h2> 
-                         <div class="backbuttoncontainer" onclick="hideCards()"><img src="../img/backButton.png" alt="go back back button"></div> 
-                     </div>
-                     <img src="../img/places/motel.png" alt="motel image">
-                     <div class="textContainer">
-                         <p>It is a hotel providing travelers with lodging and free parking facilities, typically a roadside hotel having rooms adjacent to an outside parking area or an urban hotel offering parking within the building.</p>
-                     </div>
-                 </div>
-                 <!-- CRUISE -->
-                 <div class="cruise pinwraper"><img class="pin" onclick="cardtoggle('cruise')" src="../img/Component1.png" alt=""></div>
-                 <div id="cruisecard" class="card">
-                     <div class="cardTitle"> 
-                         <h2>Cruise</h2> 
-                         <div class="backbuttoncontainer" onclick="hideCards()"><img src="../img/backButton.png" alt="go back back button"></div> 
-                     </div>
-                     <img src="../img/places/cruise.png" alt="cruise image">
-                     <div class="textContainer">
-                         <p>Cruise ships are large passenger ships used mainly for vacationing. Unlike ocean liners, which are used for transport, they typically embark on round-trip voyages to various ports-of-call, where passengers may go on tours known as “shore excursions.”</p>
-                     </div>
-                 </div>
-                 <!-- RESORT -->
-                 <div class="resort pinwraper"><img class="pin" onclick="cardtoggle('resort')" src="../img/Component1.png" alt=""></div>
-                 <div id="resortcard" class="card">
-                     <div class="cardTitle"> 
-                         <h2>Resort</h2> 
-                         <div class="backbuttoncontainer" onclick="hideCards()"><img src="../img/backButton.png" alt="go back back button"></div> 
-                     </div>
-                     <img src="../img/places/resort.png" alt="resort image">
-                     <div class="textContainer">
-                         <p>A place to which people frequently or generally go for relaxation or pleasure, especially one providing rest and recreation facilities for vacationers.</p>
-                     </div>
-                 </div>
-                 <!-- APARTMENT -->
-                 <div class="apartment pinwraper"><img class="pin" onclick="cardtoggle('apartment')" src="../img/Component1.png" alt=""></div>
-                 <div id="apartmentcard" class="card">
-                     <div class="cardTitle"> 
-                         <h2>Apartment</h2> 
-                         <div class="backbuttoncontainer" onclick="hideCards()"><img src="../img/backButton.png" alt="go back back button"></div> 
-                     </div>
-                     <img src="../img/places/apartment.png" alt="apartment image">
-                     <div class="textContainer">
-                         <p>A hotel rents furnished apartments or suites suitable for housekeeping, on a weekly or more permanent basis, and usually supplies all hotel services.</p>
-                     </div>
-                 </div>
-                 <!-- INN -->
-                 <div class="inn pinwraper"><img class="pin" onclick="cardtoggle('inn')" src="../img/Component1.png" alt=""></div>
-                 <div id="inncard" class="card">
-                     <div class="cardTitle"> 
-                         <h2>Inn</h2> 
-                         <div class="backbuttoncontainer" onclick="hideCards()"><img src="../img/backButton.png" alt="go back back button"></div> 
-                     </div>
-                     <img src="../img/places/inn.png" alt="inn image">
-                     <div class="textContainer">
-                         <p>Inns are generally establishments or buildings where travelers can seek lodging, and usually, food and drink. Inns are typically located in the country or along a highway; before the advent of motorized transportation they also provided accommodation for horses.</p>
-                     </div>
-                 </div>
-                 <!-- BUSINESS -->
-                 <div class="business pinwraper"><img class="pin" onclick="cardtoggle('business')" src="../img/Component1.png" alt=""></div>
-                 <div id="businesscard" class="card">
-                     <div class="cardTitle"> 
-                         <h2>Business</h2> 
-                         <div class="backbuttoncontainer" onclick="hideCards()"><img src="../img/backButton.png" alt="go back back button"></div> 
-                     </div>
-                     <img src="../img/places/business.png" alt="business image">
-                     <div class="textContainer">
-                         <p>Business hotels are hotels located near the business district of the country/region they are in. They focus primarily on businesspersons, not providing too much family rooms. They are sure to provide you with fast internet and silent rooms, if they are good at least. Most of them also offer conference rooms, etc.</p>
-                     </div>
-                 </div>
-                 <!-- CASTLE -->
-                 <div class="castle pinwraper"><img class="pin" onclick="cardtoggle('castle')" src="../img/Component1.png" alt=""></div>
-                 <div id="castlecard" class="card">
-                     <div class="cardTitle"> 
-                         <h2>Castle</h2> 
-                         <div class="backbuttoncontainer" onclick="hideCards()"><img src="../img/backButton.png" alt="go back back button"></div> 
-                     </div>
-                     <img src="../img/places/castle.png" alt="castle image">
-                     <div class="textContainer">
-                         <p>A castle is a type of fortified structure built during the Middle Ages predominantly by the nobility or royalty and by military orders. Scholars debate the scope of the word castle, but usually consider it to be the private fortified residence of a lord or noble.</p>
-                     </div>
-                 </div>
-                 <!-- COUCH -->
-                 <div class="couch pinwraper"><img class="pin" onclick="cardtoggle('couch')" src="../img/Component1.png" alt=""></div>
-                 <div id="couchcard" class="card">
-                     <div class="cardTitle"> 
-                         <h2>Couch</h2> 
-                         <div class="backbuttoncontainer" onclick="hideCards()"><img src="../img/backButton.png" alt="go back back button"></div> 
-                     </div>
-                     <img src="../img/places/couch.png" alt="couch image">
-                     <div class="textContainer">
-                         <p>CouchSurfing is a service that connects members to a global community of travelers. Use CouchSurfing to find a place to stay or share your home and hometown with travelers. Couchsurfers organize regular events in 200,000 cities around the world. There is always something to do and new friends to meet. </p>
-                     </div>
-                 </div>
-                 <!-- BANDB -->
-                 <div class="bandb pinwraper"><img class="pin" onclick="cardtoggle('bandb')" src="../img/Component1.png" alt=""></div>
-                 <div id="bandbcard" class="card">
-                     <div class="cardTitle"> 
-                         <h2>B&B</h2> 
-                         <div class="backbuttoncontainer" onclick="hideCards()"><img src="../img/backButton.png" alt="go back back button"></div> 
-                     </div>
-                     <img src="../img/places/bandb.png" alt="b&b image">
-                     <div class="textContainer">
-                         <p>A bed and breakfast (typically shortened to B&B or BnB) is a small lodging establishment that offers overnight accommodation and breakfast. Bed and breakfasts are often private family homes and typically have between four and eleven rooms, with six being the average. In addition, a B&B usually has the hosts living in the house.</p>
-                     </div>
-                 </div>
-                 <!-- TIMESHARE -->
-                 <div class="timeshare pinwraper"><img class="pin" onclick="cardtoggle('timeshare')" src="../img/Component1.png" alt=""></div>
-                 <div id="timesharecard" class="card">
-                     <div class="cardTitle"> 
-                         <h2>Timeshare</h2> 
-                         <div class="backbuttoncontainer" onclick="hideCards()"><img src="../img/backButton.png" alt="go back back button"></div> 
-                     </div>
-                     <img src="../img/places/timeshare.png" alt="timeshare image">
-                     <div class="textContainer">
-                         <p>A condo hotel, also known as a condotel, hotel condo or a contel, is 
-                             a building which is legally a condominium but which is operated as a hotel, offering short term rentals, and which maintains a front desk. Condo hotels are typically high-rise buildings developed and operated as luxury hotels, usually in major cities and resorts.</p>
-                     </div>
-                 </div>
-                 <!-- GLAMPING -->
-                 <div class="glamping pinwraper"><img class="pin" onclick="cardtoggle('glamping')" src="../img/Component1.png" alt=""></div>
-                 <div id="glampingcard" class="card">
-                     <div class="cardTitle"> 
-                         <h2>Glamping</h2> 
-                         <div class="backbuttoncontainer" onclick="hideCards()"><img src="../img/backButton.png" alt="go back back button"></div> 
-                     </div>
-                     <img src="../img/places/glamping.png" alt="glamping image">
-                     <div class="textContainer">
-                         <p>Is a portmanteau of “glamorous” and “camping”, and describes a style of camping with amenities and, in some cases, resort-style services not usually associated with “traditional” camping. Glamping has become particularly popular with 21st-century tourists seeking the luxuries of hotel accommodation alongside “the escapism and adventure recreation of camping”</p>
-                     </div>
-                 </div>
-                 <!-- LIGHTHOUSE -->
-                 <div class="lighthouse pinwraper"><img class="pin" onclick="cardtoggle('lighthouse')" src="../img/Component1.png" alt=""></div>
-                 <div id="lighthousecard" class="card">
-                     <div class="cardTitle"> 
-                         <h2>Lighthouse</h2> 
-                         <div class="backbuttoncontainer" onclick="hideCards()"><img src="../img/backButton.png" alt="go back back button"></div> 
-                     </div>
-                     <img src="../img/places/lighthouse.png" alt="lighthouse image">
-                     <div class="textContainer">
-                         <p>A lighthouse is a tower, building, or another type of structure designed to emit light from a system of lamps and lenses and to serve as a navigational aid for maritime pilots at sea or on inland waterways.</p>
-                     </div>
-                 </div>
-                 <!-- TREEHOUSE -->
-                 <div class="treehouse pinwraper"><img class="pin" onclick="cardtoggle('treehouse')" src="../img/Component1.png" alt=""></div>
-                 <div id="treehousecard" class="card">
-                     <div class="cardTitle"> 
-                         <h2>Treehouse</h2> 
-                         <div class="backbuttoncontainer" onclick="hideCards()"><img src="../img/backButton.png" alt="go back back button"></div> 
-                     </div>
-                     <img src="../img/places/treehouse.png" alt="treehouse image">
-                     <div class="textContainer">
-                         <p>A tree house, tree fort or treeshed is a platform or building constructed around, next to or among the trunk or branches of one or more mature trees while above ground level. Tree houses can be used for recreation, workspace, habitation, a hangout space and observation.</p>
-                     </div>
-                 </div> 
-                
+      <div class="mapcontainer">
+        <img class="map" src="https://i.imgur.com/qJEUVHv.png" alt="map image" />
+        <div class="points">
+          <!-- CAPSULE -->
+          <div class="capsule pinwraper">
+            <img
+              class="pin"
+              onclick="cardtoggle('capsule')"
+              src="https://i.imgur.com/BGjDR7Z.png"
+              alt="pin"
+            />
+          </div>
+          <div id="capsulecard" class="card">
+            <div class="cardTitle">
+              <h2>Capsule</h2>
+              <div class="backbuttoncontainer" onclick="hideCards()">
+                <img src="../img/backButton.png" alt="go back back button" />
+              </div>
             </div>
-            
+            <img src="../img/places/capsule.png" alt="capsule image" />
+            <div class="textContainer">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio officia, velit vitae libero adipisci, vero corrupti ipsa delectus maiores quas omnis. Ipsa voluptatibus commodi quaerat exercitationem possimus accusamus vel doloribus?
+              </p>
+            </div>
+          </div>
+          <!-- HOSTEL -->
+          <div class="hostel pinwraper">
+            <img
+              class="pin"
+              onclick="cardtoggle('hostel')"
+              src="https://i.imgur.com/BGjDR7Z.png"
+              alt="pin"
+            />
+          </div>
+          <div id="hostelcard" class="card">
+            <div class="cardTitle">
+              <h2>Hostel</h2>
+              <div class="backbuttoncontainer" onclick="hideCards()">
+                <img src="../img/backButton.png" alt="go back back button" />
+              </div>
+            </div>
+            <img src="../img/places/hostel.png" alt="hostel image" />
+            <div class="textContainer">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quae autem ducimus atque. Eius quisquam libero architecto nam sequi earum voluptas tempora alias tempore sunt. Aperiam ratione a officia accusantium!
+              </p>
+            </div>
+          </div>
+          <!-- BOUTIQUE -->
+          <div class="boutique pinwraper">
+            <img
+              class="pin"
+              onclick="cardtoggle('boutique')"
+              src="https://i.imgur.com/BGjDR7Z.png"
+              alt="pin"
+            />
+          </div>
+          <div id="boutiquecard" class="card">
+            <div class="cardTitle">
+              <h2>Boutique Hotel</h2>
+              <div class="backbuttoncontainer" onclick="hideCards()">
+                <img src="../img/backButton.png" alt="go back back button" />
+              </div>
+            </div>
+            <img src="../img/places/boutique.png" alt="boutique image" />
+            <div class="textContainer">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quae autem ducimus atque. Eius quisquam libero architecto nam sequi earum voluptas tempora alias tempore sunt. Aperiam ratione a officia accusantium!
+              </p>
+            </div>
+          </div>
+
+          <!-- MOTEL -->
+          <div class="motel pinwraper">
+            <img
+              class="pin"
+              onclick="cardtoggle('motel')"
+              src="https://i.imgur.com/BGjDR7Z.png"
+              alt="pin"
+            />
+          </div>
+          <div id="motelcard" class="card">
+            <div class="cardTitle">
+              <h2>Motel</h2>
+              <div class="backbuttoncontainer" onclick="hideCards()">
+                <img src="../img/backButton.png" alt="go back back button" />
+              </div>
+            </div>
+            <img src="../img/places/motel.png" alt="motel image" />
+            <div class="textContainer">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quae autem ducimus atque. Eius quisquam libero architecto nam sequi earum voluptas tempora alias tempore sunt. Aperiam ratione a officia accusantium!
+              </p>
+            </div>
+          </div>
+          <!-- CRUISE -->
+          <div class="cruise pinwraper">
+            <img
+              class="pin"
+              onclick="cardtoggle('cruise')"
+              src="https://i.imgur.com/BGjDR7Z.png"
+              alt="pin"
+            />
+          </div>
+          <div id="cruisecard" class="card">
+            <div class="cardTitle">
+              <h2>Cruise</h2>
+              <div class="backbuttoncontainer" onclick="hideCards()">
+                <img src="../img/backButton.png" alt="go back back button" />
+              </div>
+            </div>
+            <img src="../img/places/cruise.png" alt="cruise image" />
+            <div class="textContainer">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quae autem ducimus atque. Eius quisquam libero architecto nam sequi earum voluptas tempora alias tempore sunt. Aperiam ratione a officia accusantium!
+              </p>
+            </div>
+          </div>
+          <!-- RESORT -->
+          <div class="resort pinwraper">
+            <img
+              class="pin"
+              onclick="cardtoggle('resort')"
+              src="https://i.imgur.com/BGjDR7Z.png"
+              alt="pin"
+            />
+          </div>
+          <div id="resortcard" class="card">
+            <div class="cardTitle">
+              <h2>Resort</h2>
+              <div class="backbuttoncontainer" onclick="hideCards()">
+                <img src="../img/backButton.png" alt="go back back button" />
+              </div>
+            </div>
+            <img src="../img/places/resort.png" alt="resort image" />
+            <div class="textContainer">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quae autem ducimus atque. Eius quisquam libero architecto nam sequi earum voluptas tempora alias tempore sunt. Aperiam ratione a officia accusantium!
+              </p>
+            </div>
+          </div>
+          <!-- APARTMENT -->
+          <div id="apartmentsubgrid">
+            <div class="apartment pinwraper">
+                <img
+                  class="pin"
+                  onclick="cardtoggle('apartment')"
+                  src="https://i.imgur.com/BGjDR7Z.png"
+                  alt="pin"
+                />
+              </div>
+          </div>
+          
+          <div id="apartmentcard" class="card">
+            <div class="cardTitle">
+              <h2>Apartment</h2>
+              <div class="backbuttoncontainer" onclick="hideCards()">
+                <img src="../img/backButton.png" alt="go back back button" />
+              </div>
+            </div>
+            <img src="../img/places/apartment.png" alt="apartment image" />
+            <div class="textContainer">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quae autem ducimus atque. Eius quisquam libero architecto nam sequi earum voluptas tempora alias tempore sunt. Aperiam ratione a officia accusantium!
+              </p>
+            </div>
+          </div>
+          <!-- INN -->
+          <div class="inn pinwraper">
+            <img
+              class="pin"
+              onclick="cardtoggle('inn')"
+              src="https://i.imgur.com/BGjDR7Z.png"
+              alt="pin"
+            />
+          </div>
+          <div id="inncard" class="card">
+            <div class="cardTitle">
+              <h2>Inn</h2>
+              <div class="backbuttoncontainer" onclick="hideCards()">
+                <img src="../img/backButton.png" alt="go back back button" />
+              </div>
+            </div>
+            <img src="../img/places/inn.png" alt="inn image" />
+            <div class="textContainer">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quae autem ducimus atque. Eius quisquam libero architecto nam sequi earum voluptas tempora alias tempore sunt. Aperiam ratione a officia accusantium!
+              </p>
+            </div>
+          </div>
+          <!-- BUSINESS -->
+          <div class="business pinwraper">
+            <img
+              class="pin"
+              onclick="cardtoggle('business')"
+              src="https://i.imgur.com/BGjDR7Z.png"
+              alt="pin"
+            />
+          </div>
+          <div id="businesscard" class="card">
+            <div class="cardTitle">
+              <h2>Business</h2>
+              <div class="backbuttoncontainer" onclick="hideCards()">
+                <img src="../img/backButton.png" alt="go back back button" />
+              </div>
+            </div>
+            <img src="../img/places/business.png" alt="business image" />
+            <div class="textContainer">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quae autem ducimus atque. Eius quisquam libero architecto nam sequi earum voluptas tempora alias tempore sunt. Aperiam ratione a officia accusantium!
+              </p>
+            </div>
+          </div>
+          <!-- CASTLE -->
+          <div class="castle pinwraper">
+            <img
+              class="pin"
+              onclick="cardtoggle('castle')"
+              src="https://i.imgur.com/BGjDR7Z.png"
+              alt="pin"
+            />
+          </div>
+          <div id="castlecard" class="card">
+            <div class="cardTitle">
+              <h2>Castle</h2>
+              <div class="backbuttoncontainer" onclick="hideCards()">
+                <img src="../img/backButton.png" alt="go back back button" />
+              </div>
+            </div>
+            <img src="../img/places/castle.png" alt="castle image" />
+            <div class="textContainer">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quae autem ducimus atque. Eius quisquam libero architecto nam sequi earum voluptas tempora alias tempore sunt. Aperiam ratione a officia accusantium!
+              </p>
+            </div>
+          </div>
+          <!-- COUCH -->
+          <div class="couch pinwraper">
+            <img
+              class="pin"
+              onclick="cardtoggle('couch')"
+              src="https://i.imgur.com/BGjDR7Z.png"
+              alt="pin"
+            />
+          </div>
+          <div id="couchcard" class="card">
+            <div class="cardTitle">
+              <h2>Couch</h2>
+              <div class="backbuttoncontainer" onclick="hideCards()">
+                <img src="../img/backButton.png" alt="go back back button" />
+              </div>
+            </div>
+            <img src="../img/places/couch.png" alt="couch image" />
+            <div class="textContainer">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quae autem ducimus atque. Eius quisquam libero architecto nam sequi earum voluptas tempora alias tempore sunt. Aperiam ratione a officia accusantium!
+              </p>
+            </div>
+          </div>
+          <!-- BANDB -->
+          <div class="bandb pinwraper">
+            <img
+              class="pin"
+              onclick="cardtoggle('bandb')"
+              src="https://i.imgur.com/BGjDR7Z.png"
+              alt="pin"
+            />
+          </div>
+          <div id="bandbcard" class="card">
+            <div class="cardTitle">
+              <h2>B&B</h2>
+              <div class="backbuttoncontainer" onclick="hideCards()">
+                <img src="../img/backButton.png" alt="go back back button" />
+              </div>
+            </div>
+            <img src="../img/places/bandb.png" alt="b&b image" />
+            <div class="textContainer">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quae autem ducimus atque. Eius quisquam libero architecto nam sequi earum voluptas tempora alias tempore sunt. Aperiam ratione a officia accusantium!
+              </p>
+            </div>
+          </div>
+          <!-- TIMESHARE -->
+          <div class="timeshare pinwraper">
+            <img
+              class="pin"
+              onclick="cardtoggle('timeshare')"
+              src="https://i.imgur.com/BGjDR7Z.png"
+              alt="pin"
+            />
+          </div>
+          <div id="timesharecard" class="card">
+            <div class="cardTitle">
+              <h2>Timeshare</h2>
+              <div class="backbuttoncontainer" onclick="hideCards()">
+                <img src="../img/backButton.png" alt="go back back button" />
+              </div>
+            </div>
+            <img src="../img/places/timeshare.png" alt="timeshare image" />
+            <div class="textContainer">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quae autem ducimus atque. Eius quisquam libero architecto nam sequi earum voluptas tempora alias tempore sunt. Aperiam ratione a officia accusantium!
+              </p>
+            </div>
+          </div>
+          <!-- GLAMPING -->
+          <div class="glamping pinwraper">
+            <img
+              class="pin"
+              onclick="cardtoggle('glamping')"
+              src="https://i.imgur.com/BGjDR7Z.png"
+              alt="pin"
+            />
+          </div>
+          <div id="glampingcard" class="card">
+            <div class="cardTitle">
+              <h2>Glamping</h2>
+              <div class="backbuttoncontainer" onclick="hideCards()">
+                <img src="../img/backButton.png" alt="go back back button" />
+              </div>
+            </div>
+            <img src="../img/places/glamping.png" alt="glamping image" />
+            <div class="textContainer">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quae autem ducimus atque. Eius quisquam libero architecto nam sequi earum voluptas tempora alias tempore sunt. Aperiam ratione a officia accusantium!
+              </p>
+            </div>
+          </div>
+          <!-- LIGHTHOUSE -->
+          <div class="lighthouse pinwraper">
+            <img
+              class="pin"
+              onclick="cardtoggle('lighthouse')"
+              src="https://i.imgur.com/BGjDR7Z.png"
+              alt="pin"
+            />
+          </div>
+          <div id="lighthousecard" class="card">
+            <div class="cardTitle">
+              <h2>Lighthouse</h2>
+              <div class="backbuttoncontainer" onclick="hideCards()">
+                <img src="../img/backButton.png" alt="go back back button" />
+              </div>
+            </div>
+            <img src="../img/places/lighthouse.png" alt="lighthouse image" />
+            <div class="textContainer">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quae autem ducimus atque. Eius quisquam libero architecto nam sequi earum voluptas tempora alias tempore sunt. Aperiam ratione a officia accusantium!
+              </p>
+            </div>
+          </div>
+          <!-- TREEHOUSE -->
+          <div class="treehouse pinwraper">
+            <img
+              class="pin"
+              onclick="cardtoggle('treehouse')"
+              src="https://i.imgur.com/BGjDR7Z.png"
+              alt="pin"
+            />
+          </div>
+          <div id="treehousecard" class="card">
+            <div class="cardTitle">
+              <h2>Treehouse</h2>
+              <div class="backbuttoncontainer" onclick="hideCards()">
+                <img src="../img/backButton.png" alt="go back back button" />
+              </div>
+            </div>
+            <img src="../img/places/treehouse.png" alt="treehouse image" />
+            <div class="textContainer">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quae autem ducimus atque. Eius quisquam libero architecto nam sequi earum voluptas tempora alias tempore sunt. Aperiam ratione a officia accusantium!
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-    
-    <script src="../scripts/map.js">
-        
-    </script>
-</body>
+
+    <script src="../scripts/map.js"></script>
+  </body>
 </html>
